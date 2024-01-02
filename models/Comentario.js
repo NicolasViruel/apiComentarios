@@ -6,7 +6,7 @@ const ComentarioSchema = mongoose.Schema({
         required: true,
         trim: true
     },
-    comenterio: {
+    comentario: {
         type: String,
         required: true,
         trim: true

@@ -25,10 +25,11 @@ exports.obtenerComentario = async (req, res) => {
 exports.eliminarrComentario = async (req, res) => {
     try {
         let comentario = await Comentario.findById(req.params.id);
+        console.log(comentario);
         if (!comentario) {
             res.status(404).json({ msg: 'No existe el comentario' });
         }
-        await Comentario.findOneAndRemove({ _id: req.params.id });
+        await Comentario.findOneAndDelete({ _id: req.params.id });
         res.json({ msg: 'Comentario eliminado' });
     } catch (error) {
         console.log(error);
