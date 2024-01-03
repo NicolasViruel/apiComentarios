@@ -10,6 +10,6 @@ app.use(cors());
 //llamamos a las rutas
 app.use('/api/comentarios', require('./routes/comentario'));
 
-app.listen(5000, () => {
-    console.log('Server listening on port 5000 🌈');
+app.listen(process.env.PORT, () => {
+    console.log('Server listening on port  🌈' + process.env.PORT);
 });

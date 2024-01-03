@@ -4,7 +4,8 @@
   "description": "Backend de comentarios",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start:dev": "nodemon index.js",
+    "start": "node.index.js"
   },
   "author": "Nicolas Viruel",
   "license": "ISC",
